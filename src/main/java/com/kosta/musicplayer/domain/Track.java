@@ -35,4 +35,8 @@ public class Track {
     public void setLen(int len) { this.len = len; }
     public int getCount() { return count; }
     public void setCount(int count) { this.count = count; }
+    public Album getAlbum() {return album; }
+    public void setAlbum(Album album) { this.album = album; }
+    public Genre getGenre() { return genre; }
+    public void setGenre(Genre genre) { this.genre = genre;}
 }
