@@ -3,6 +3,7 @@ package com.kosta.musicplayer.repository;
 import com.kosta.musicplayer.domain.Artist;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import java.util.List;
@@ -12,8 +13,9 @@ import java.util.List;
 public interface ArtistRepository extends JpaRepository<Artist, Long> {
     //가져올 항목을 기준으로 메소드명 작성
     //List<Artist> findByName(String name);
+    List<Artist> findByName(@Param(value = "name") String name);
 //    @Query("SELECT a from Artist a WHERE a.name = ?1")
-    @Query("SELECT a from Artist a WHERE a.name = :name") //JPQL
+//    @Query("SELECT a from Artist a WHERE a.name = :name") //JPQL
 //    @Query(value = "dldkdkdj", nativeQuery = true)    //NATIVE QUERY
-    List<Artist> findmmmmmm(String name);
+//    List<Artist> findmmmmmm(String name);
 }
