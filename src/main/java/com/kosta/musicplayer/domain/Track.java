@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Data
 public class Track {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String title;
     private String albumTitle;
@@ -26,6 +27,5 @@ public class Track {
 
     public static void main(String[] args) {
         Album album = new Album();
-
     }
 }
