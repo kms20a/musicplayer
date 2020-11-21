@@ -13,7 +13,7 @@ public class Album {
     Date date;
 
     @ManyToOne
-//  @JoinColumn(name = "ARTIST_ID")
+    @JoinColumn(name = "ARTIST_ID")
     private Artist artist;
 
     @OneToMany(mappedBy = "album", fetch = FetchType.LAZY)
