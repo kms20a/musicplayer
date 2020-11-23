@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-@Component
+//@Component
 public class MusicPlayerRunner implements ApplicationRunner {
     @Autowired
     TrackRepository trackRepository;
