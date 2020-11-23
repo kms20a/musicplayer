@@ -26,6 +26,7 @@ public class MusicPlayerRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        /*
         Track track = new Track();
         track.setId(1);
         track.setTitle("곡명 : 여름..안에서");
@@ -49,6 +50,8 @@ public class MusicPlayerRunner implements ApplicationRunner {
         genreRepository.save(genre);
 
         trackRepository.save(track);
-
+*/
+//        Track track2 = trackRepository.getOne(1L);
+//        System.out.println(track2);
     }
 }
